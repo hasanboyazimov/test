@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out 0.3s;
+    font-family: "Livvic", sans-serif;
+}
+li {
+    list-style: none;
+}
+.container {
+    width: 100%;
+    max-width: 1200px; /* it depends to you project */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+.header-parent {
+    background:url(/images/bg-pattern-home-1.svg)center left -100px no-repeat, #014E56;
+    padding-top: 70px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.sitenav__list {
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.burger-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.btn {
+  padding: 10px 32px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid white;
+    color: white;
+    background-color: #014E56;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #2C6269;
+}
+
+
+
+.header-motto {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 150px !important;
+    padding-bottom: 239px !important;
+    background: url(/images/bg-pattern-home-2.svg)right bottom no-repeat;
+}
+
+.motto-title {
+    height: 100%;
+    font-size: 100px;
+    max-width: 635px;
+    font-weight: 700;
+}
+
+.motto-text {
+    width: 445px;
+    height: 100%;
+    font-size: 18px;
+    line-height: 28px;  
+}
+
+.separated-purple {
+    color: #F67E7E;
+}
+
+.separated-blue {
+    color: #79C8C7;
+}
+
+.decor {
+    width: 50px;
+    height: 4px;
+    margin-bottom: 80px;
+    background-color: #79C8C7;
+}
+
+
+
+.hamburger-menu {
+    display: none;
+  }
+  .mobile-nav {
+    display: none; /* Hide by default on larger screens */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background: url(./images/bg-pattern-about-1-mobile-nav-1.svg) right -100px bottom no-repeat, url(/images/icon-close.svg) right 80px top 80px no-repeat;
+  
+    background-color: #2c6269;
+    z-index: 1000;
+    padding-top: 9rem;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+    transform: translateX(200%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .mobile-nav::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/icon-close.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 18rem;
+    margin-bottom: 4rem;
+  }
+
+
+  
+.service-parent {
+    background:url(/images/bg-pattern-home-3.svg) right -100px bottom no-repeat, #012F34;
+}
+
+.service {
+    padding-bottom: 150px !important;
+}
+
+.services {
+    margin-top: 150px !important;
+}
+.service-title {
+    width: 445px;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.service-box {
+    display: flex;
+    width: 540px;
+    margin-top: 50px;
+}
+
+.service-logo {
+    margin-right: 15px;
+}
+
+.service-name {
+    margin: 0;
+    font-size: 18px;
+    color: #F67E7E;
+}
+
+.service-info {
+    margin-top: 10px !important;
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+    opacity: 80%;
+}
+
+.service-about {
+    width: 445px;
+} 
+
+.story-parent {
+    /* background-color: #004047; */
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url(/images/bg-pattern-home-4-about-3.svg)top left no-repeat,
+    url(/images/bg-pattern-home-5.svg) bottom right no-repeat, #004047;
+}
+
+.story {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.story-blog {
+    display: flex;
+    padding-top: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.story-title {
+    margin: 0;
+   text-align: center;
+    font-size: 48px;
+}
+
+.story-box {
+    padding-top: 40px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/images/nail-decor.svg) top center no-repeat;
+    background-size: 67px;
+}
+
+.story-text {
+    text-align: center;
+    font-size: 15px;
+}
+
+.story-author {
+    margin-top: 20px;
+    color: #79C8C7;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.author-job {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.author-img {
+    width: 62px;
+    border-radius: 50px;
+    margin-top: 30px;
+    border: 2px solid #C4FFFE;
+}
+
+
+.top-parent {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url(/images/bg-pattern-home-6-about-5.svg)left bottom no-repeat, #F67E7E;
+}
+
+.footer-top {
+    max-width: 917px;
+}
+
+.top-text {
+    font-size: 48px;
+    font-weight: 700;
+    color: #002529;
+}
+
+
+.footer-parent {
+    background-color: #002529;
+}
+
+
+.footer-adress {
+    width: 225px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+.footer {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+
+.footer-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-left a {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.footer-left a:hover {
+    color: #F67E7E;
+    transition: 0.1s ease-in-out all;
+}
+
+
+.sotialmedia-logos {
+    display: flex;
+    width: 104px;
+    justify-content: space-between;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sotialmedia-logos a:hover {
+    cursor: pointer;
+    color: #F67E7E;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .container {
+        padding-left: 4rem ;
+        padding-right: 4rem;
+    }
+
+    .header-parent {
+        background: #014E56;
+    }
+
+    .header-motto {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .decor {
+        display: none;
+    }
+
+    .motto-title {
+        font-size: 64px;
+    }
+
+    .motto-text {
+        font-size: 15px;
+    }
+
+    .header-motto {
+        background-position:bottom center;
+    }
+
+    .service-title {
+        font-size: 32px;
+    }
+
+    .service-parent {
+        background:url(/images/bg-pattern-home-3.svg) right -100px top no-repeat, #012F34;
+    }
+    
+    .service {
+        flex-direction: column;
+        max-width: 573px;
+    }
+
+    .story-title {
+        font-size: 32px;
+    }
+
+    .story-blog {
+        flex-direction: column;
+    }
+
+    .story {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-parent {
+        padding-top: 48px;
+    }
+
+
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .hamburger-box {
+        margin-left: auto;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-motto {
+        font-size: 40px;
+    }
+
+    .motto-text {
+        width: 100%;
+        max-width: 327px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+      }
+      .mobile-nav {
+        display: block;
+      }
+      .mobile-btn {
+        display: block;
+        margin-top: 5rem;
+        font-size: 17px;
+        text-align: center;
+      }
+
+    .service-title {
+        
+    }
+}
+
